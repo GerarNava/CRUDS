@@ -12,6 +12,20 @@
     <br>
     <form action="{{route('post.store')}}"method="post">
     @csrf
+    <label for="">Título</label>
+    <input type="text" name="title">
+
+    <label for="">Url corta</label>
+    <input type="text" name="slug">
+
+    <label for="">Conteniedo</label>
+    <textarea name="contenet"></textarea>
+    
+    <label for="">Descripcion</label>
+    <textarea name="Description"></textarea>
+
+
+
     <button type="submit">Enviar</button>
 </form>    
 </body>
