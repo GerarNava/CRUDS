@@ -1,0 +1,78 @@
+*{
+    background-image: url("../assets/image/img2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.titulo{
+    font-family: 'Lato', sans-serif; 
+    font-style: italic;
+    text-align: center;
+    color: rgb(255, 0, 0); 
+    background:rgb(54, 53, 54);
+}
+
+.colNom{
+    position: absolute;
+    float:left;
+    color: rgb(255, 0, 0); 
+    font-family: "Open Sans", Arial, sans-serif;
+    left: 300px;
+  
+}
+.anchNom{
+    width: 400px;
+    height: 25px;
+    color: rgb(255, 0, 0); 
+    background: #6f6d6d;
+}
+.colUrl{
+    position: absolute;
+    float:left;
+    color: rgb(255, 0, 0); 
+    left:800px;
+    font-family: "Open Sans", Arial, sans-serif;
+
+   
+}
+
+.ConCont{
+    position: absolute;
+    float:left;
+    color: rgb(255, 0, 0); 
+    left: 300px;
+    margin-top: 100px;
+    width: 100px;
+    height: 200px;
+}
+
+.ConDesc{
+    position: absolute;
+    float:left;
+    left:800px;
+    color: rgb(255, 0, 0); 
+    margin-top: 100px;
+    width: 100px;
+    height: 200px;
+}
+
+.anchNom2{
+    width: 400px;
+    height: 200px;
+    color: rgb(255, 0, 0); 
+    background: #6f6d6d;
+}
+.btn-Enviar{
+    
+    position: absolute;
+    float:left;
+    left: 610px;
+    margin-top: 350px;
+    justify-content: center;
+    color: rgb(255, 0, 0); 
+    background: #6f6d6d;
+    width: 300px;
+    height: 50px;
+    font-size: 30px;
+}
