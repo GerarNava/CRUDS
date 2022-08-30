@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Dashboard;
 
 use App\Http\Controllers\Controller;
 use App\Models\Post;
+use App\Http\Requests\StorePostPost;
 use Illuminate\Http\Request;
 
 class PostController extends Controller
@@ -15,8 +16,8 @@ class PostController extends Controller
      */
     public function index()
     {
-        echo('hola');
-        echo('Gerardo Fuentes');
+
+       
         //
     }
 
@@ -37,11 +38,21 @@ class PostController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StorePostPost $request)
     {
+        //dd($request->validated());
+        
+        
+        //echo"El titulo es".$request->title; 
+        
+        Post::create($request->validated());
+       
+        //Return back, sirve para redireccionar a la pagina inicial
+        //return back()->with('status','Muchas gracias tu post fue credado con exito');
 
-        echo "Ya llegue tengo asistencia Gerardo Fuentes"; 
-        //
+        return redirect('post/create')->with('status','Muchas gracias tu post fue credado con exito');    
+
+
     }
 
     /**
