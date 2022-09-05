@@ -8,6 +8,8 @@
     <title>Document</title>
 </head>
 <body>
+    
+@include('dashboard.partials.nav-header-main')
     <h1 class="titulo"> Ingreso de Post</h1>
     <br>
     <br>
@@ -16,15 +18,12 @@
 
 <div class="container">
 
-@if(session('status'))
-    <div class="alert alert-danger">
-    {{session('status')}}
-    </div>
+
 
 
     <form action="{{route('post.store')}}"method="post">
    
-@endif
+    @include('dashboard.partials.sesion-flash-status')
     @csrf
     <div class="colNom" >
         <label for="">Título</label><br>

@@ -17,7 +17,8 @@ class PostController extends Controller
     public function index()
     {
 
-       
+       $post=Post::orderBy('create_at','asc'); 
+       echo wiew ('dashboard.post.index',$post);
         //
     }
 
